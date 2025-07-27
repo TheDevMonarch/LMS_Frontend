@@ -28,6 +28,7 @@ import AllotBook from "./Pages/Admin/AllotBook.jsx";
 import ChangePenaltyAmount from "./Pages/Admin/ChangePenaltyAmount.jsx";
 import AddNewStudent from "./Pages/Admin/addNewStudent.jsx";
 
+
 const App = () => {
 
   const { isAuthenticated, loading, role } = useContext(LMSContext);
