@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: montserrat;
+  height: 100%;
+  position: relative;
+  /* background-color: #f8f9fa; */
+  /* background: linear-gradient(to bottom right, #f0f4ff, #dce8ff); */
+/* background-color: #fef8f2; */
+background: linear-gradient(to right, #dcecfb, #f4f6f9);
+
+
+
+
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.main-page {
+  position: relative;
+  max-width: 100%;
+  padding: 25px;
+  padding-left: 45px;
+  height: 100%;
+  margin-bottom: 5px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease-in;
+    padding: 20px;
+  background: linear-gradient(to bottom right, #e0f2ff, #b3d9ff);
+  overflow-y: auto; /* enables scroll if needed */
+}
+
+@media (max-width: 550px) {
+  .main-page {
+           padding-left: 0px;
+        margin: auto;
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+  }
+
+  .grid{
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+  }
+  
+}
+
+.skeleton {
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1 }
+  50% { opacity: 0.4 }
+}

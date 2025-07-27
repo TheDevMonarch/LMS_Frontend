@@ -1,0 +1,183 @@
+.page-heading h1{
+  color: #0D47A1;
+}
+
+.quick-view {
+  display: flex;
+  justify-content: space-between;
+  max-width: 640px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.quick-view>div {
+  position: relative;
+  width: 42%;
+  color: white;
+  padding-top: 20px;
+  padding-left: 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #1976D2, #0D47A1);
+  border-radius: 10px;
+}
+
+.quick-view>div:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.quick-view div span {
+  font-size: 22px;
+}
+
+.quick-view .count {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  font-size: 40px;
+}
+
+/* Tablet responsiveness (768px and below) */
+@media (max-width: 768px) {
+  .quick-view {
+    max-width: 90%;
+    height: 130px;
+    margin-top: 40px;
+  }
+
+  .quick-view>div {
+    padding-top: 18px;
+    padding-left: 20px;
+  }
+
+  .quick-view div span {
+    font-size: 20px;
+  }
+
+  .quick-view .count {
+    right: 20px;
+    bottom: 18px;
+    font-size: 36px;
+  }
+}
+
+/* Small tablet / large mobile (650px and below) */
+@media (max-width: 650px) {
+  .quick-view {
+    height: 120px;
+    margin-top: 35px;
+  }
+
+  .quick-view>div {
+    width: 45%;
+    padding-top: 16px;
+    padding-left: 18px;
+  }
+
+  .quick-view div span {
+    font-size: 18px;
+  }
+
+  .quick-view .count {
+    right: 18px;
+    bottom: 16px;
+    font-size: 32px;
+  }
+}
+
+/* Mobile responsiveness (550px and below) */
+@media (max-width: 550px) {
+  .quick-view {
+    height: 120px;
+    width: 95%;
+    max-width: 330px;
+  }
+
+  .quick-view .count {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    font-size: 30px;
+  }
+
+  .quick-view>div {
+    width: 45%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+
+  .quick-view div span {
+    font-size: 18px;
+  }
+}
+
+/* Extra small mobile (480px and below) */
+@media (max-width: 480px) {
+  .page-heading h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .quick-view {
+    height: 110px;
+    width: 95%;
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  .quick-view>div {
+    width: 47%;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .quick-view div span {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .quick-view .count {
+    right: 10px;
+    bottom: 8px;
+    font-size: 26px;
+  }
+}
+
+/* Very small mobile (360px and below) */
+@media (max-width: 360px) {
+  .page-heading h1 {
+    font-size: 22px;
+  }
+
+  .quick-view {
+    height: 100px;
+    width: 95%;
+    max-width: 280px;
+    margin-top: 25px;
+  }
+
+  .quick-view>div {
+    width: 48%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 8px;
+  }
+
+  .quick-view div span {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .quick-view .count {
+    right: 8px;
+    bottom: 6px;
+    font-size: 24px;
+  }
+
+  .quick-view>div:hover {
+    transform: scale(1.01);
+  }
+}

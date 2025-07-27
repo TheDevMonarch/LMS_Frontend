@@ -1,0 +1,71 @@
+
+
+.container-extension-request {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  margin: 50px auto;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #0d47a1;
+  text-align: center;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-box input,
+.form-box select {
+  width: 100%;
+  padding: 12px 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.Extension-Button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1e88e5, #0d47a1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1565c0, #002171);
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .form-box input,
+  .form-box select,
+  .form-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

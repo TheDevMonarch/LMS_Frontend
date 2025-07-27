@@ -1,0 +1,512 @@
+        .container {
+          min-height: 100vh;
+          background: linear-gradient(135deg, #e3f2fd 0%, #e8eaf6 100%);
+          font-family: system-ui, -apple-system, sans-serif;
+        }
+
+       
+
+        .main-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 32px 20px;
+        }
+
+        .card {
+          background-color: white;
+          border-radius: 16px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+
+        .card-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
+          padding: 32px;
+        }
+
+        .section-header {
+          background: linear-gradient(135deg, #1976d2 0%, #3f51b5 100%);
+          color: white;
+          padding: 24px;
+          border-radius: 12px;
+          margin-bottom: 24px;
+        }
+
+        .section-title {
+          font-size: 24px;
+          font-weight: bold;
+          margin: 0 0 8px 0;
+        }
+
+        .section-subtitle {
+          font-size: 14px;
+          color: #bbdefb;
+          margin: 0;
+        }
+
+        .book-info-card {
+          background-color: #f5f5f5;
+          padding: 24px;
+          border-radius: 12px;
+        }
+
+        .book-image-container {
+          display: flex;
+          gap: 24px;
+          align-items: flex-start;
+        }
+
+        .book-image {
+          width: 192px;
+          height: 256px;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          flex-shrink: 0;
+        }
+
+        .book-details {
+          flex: 1;
+          width: 100%;
+        }
+
+        .book-title {
+          font-size: 24px;
+          font-weight: bold;
+          color: #212121;
+          margin-bottom: 16px;
+        }
+
+        .detail-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 12px;
+          color: #424242;
+          font-size: 16px;
+          flex-wrap: wrap;
+        }
+
+        .detail-icon {
+          color: #1976d2;
+          flex-shrink: 0;
+        }
+
+        .detail-icon-success {
+          color: #388e3c;
+          flex-shrink: 0;
+        }
+
+        .description {
+          margin-top: 24px;
+          padding-top: 24px;
+          border-top: 1px solid #e0e0e0;
+        }
+
+        .description-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: #212121;
+          margin-bottom: 8px;
+        }
+
+        .description-text {
+          color: #424242;
+          line-height: 1.6;
+          font-size: 16px;
+        }
+
+        .allotment-card {
+          background-color: #f5f5f5;
+          padding: 24px;
+          border-radius: 12px;
+        }
+
+        .allotment-header {
+          background: linear-gradient(135deg, #388e3c 0%, #00897b 100%);
+          color: white;
+          padding: 24px;
+          border-radius: 12px;
+          margin-bottom: 24px;
+        }
+
+        .status-card {
+          background-color: white;
+          padding: 16px;
+          border-radius: 8px;
+          border-left: 4px solid #1976d2;
+          margin-bottom: 24px;
+        }
+
+        .status-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .status-title {
+          font-weight: 600;
+          color: #212121;
+          margin: 0;
+          font-size: 16px;
+        }
+
+        .status-text {
+          color: #666;
+          margin: 4px 0 0 0;
+          font-size: 14px;
+        }
+
+        .status-badge {
+          padding: 4px 12px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        .status-badge-available {
+          background-color: #e8f5e8;
+          color: #2e7d32;
+        }
+
+        .status-badge-unavailable {
+          background-color: #ffebee;
+          color: #c62828;
+        }
+
+        .input-section {
+          margin-bottom: 16px;
+        }
+
+        .label {
+          display: block;
+          font-size: 14px;
+          font-weight: 500;
+          color: #424242;
+          margin-bottom: 8px;
+        }
+
+        .input {
+          width: 100%;
+          padding: 12px 16px;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          font-size: 16px;
+          transition: border-color 0.2s, box-shadow 0.2s;
+          box-sizing: border-box;
+        }
+
+        .input:focus {
+          border-color: #1976d2;
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+        }
+
+        .input:disabled {
+          background-color: #f5f5f5;
+          cursor: not-allowed;
+        }
+
+        .button {
+          width: 100%;
+          padding: 12px 24px;
+          border-radius: 8px;
+          font-weight: 500;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          transition: all 0.2s;
+          margin-bottom: 16px;
+          min-height: 48px;
+        }
+
+        .button-enabled {
+          background-color: #1976d2;
+          color: white;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button-enabled:hover {
+          background-color: #1565c0;
+          transform: translateY(-1px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .button-disabled {
+          background-color: #e0e0e0;
+          color: #999;
+          cursor: not-allowed;
+        }
+
+        .message-card {
+          padding: 16px;
+          border-radius: 8px;
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          margin-bottom: 16px;
+          font-size: 16px;
+        }
+
+        .message-success {
+          background-color: #e8f5e8;
+          border: 1px solid #c8e6c9;
+          color: #2e7d32;
+        }
+
+        .message-error {
+          background-color: #ffebee;
+          border: 1px solid #ffcdd2;
+          color: #c62828;
+        }
+
+        .book-id-card {
+          background-color: #e3f2fd;
+          padding: 16px;
+          border-radius: 8px;
+          border: 1px solid #bbdefb;
+        }
+
+        .book-id-title {
+          font-weight: 600;
+          color: #1565c0;
+          margin-bottom: 8px;
+          font-size: 16px;
+        }
+
+        .book-id-value {
+          font-family: monospace;
+          font-size: 14px;
+          color: #1976d2;
+          word-break: break-all;
+        }
+
+        .book-id-note {
+          font-size: 12px;
+          color: #1976d2;
+          margin-top: 4px;
+        }
+
+        .animate-spin {
+          animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 640px) {
+          .header {
+            padding: 0 16px;
+          }
+
+          .header-content {
+            height: 56px;
+            flex-wrap: wrap;
+          }
+
+          .header-left {
+            gap: 8px;
+          }
+
+          .back-button {
+            padding: 6px 8px;
+            font-size: 12px;
+          }
+
+          .header-title {
+            gap: 8px;
+          }
+
+          .header-title-text {
+            font-size: 16px;
+          }
+
+          .header-subtitle {
+            display: none;
+          }
+
+          .header-right {
+            font-size: 12px;
+          }
+
+          .main-content {
+            padding: 16px;
+          }
+
+          .card {
+            border-radius: 12px;
+          }
+
+          .card-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            padding: 16px;
+          }
+
+          .section-header {
+            padding: 16px;
+            margin-bottom: 16px;
+          }
+
+          .section-title {
+            font-size: 18px;
+          }
+
+          .section-subtitle {
+            font-size: 12px;
+          }
+
+          .book-info-card {
+            padding: 16px;
+          }
+
+          .book-image-container {
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+          }
+
+          .book-image {
+            width: 150px;
+            height: 200px;
+            margin: 0 auto;
+          }
+
+          .book-title {
+            font-size: 20px;
+            margin-bottom: 12px;
+            text-align: center;
+          }
+
+          .detail-item {
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+          }
+
+          .description {
+            margin-top: 16px;
+            padding-top: 16px;
+          }
+
+          .description-title {
+            font-size: 16px;
+          }
+
+          .description-text {
+            font-size: 14px;
+          }
+
+          .allotment-card {
+            padding: 16px;
+          }
+
+          .allotment-header {
+            padding: 16px;
+            margin-bottom: 16px;
+          }
+
+          .status-card {
+            padding: 12px;
+            margin-bottom: 16px;
+          }
+
+          .status-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+          }
+
+          .status-title {
+            font-size: 14px;
+          }
+
+          .status-text {
+            font-size: 12px;
+          }
+
+          .status-badge {
+            padding: 4px 8px;
+            font-size: 10px;
+            align-self: flex-start;
+          }
+
+          .label {
+            font-size: 12px;
+          }
+
+          .input {
+            padding: 10px 12px;
+            font-size: 14px;
+          }
+
+          .button {
+            padding: 10px 16px;
+            font-size: 14px;
+            min-height: 44px;
+          }
+
+          .message-card {
+            padding: 12px;
+            gap: 8px;
+            font-size: 14px;
+          }
+
+          .book-id-card {
+            padding: 12px;
+          }
+
+          .book-id-title {
+            font-size: 14px;
+          }
+
+          .book-id-value {
+            font-size: 12px;
+          }
+
+          .book-id-note {
+            font-size: 10px;
+          }
+        }
+
+        /* Tablet Styles */
+        @media (min-width: 641px) and (max-width: 1024px) {
+          .main-content {
+            padding: 24px;
+          }
+
+          .card-grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding: 24px;
+          }
+
+          .section-title {
+            font-size: 20px;
+          }
+
+          .book-image-container {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .book-image {
+            width: 180px;
+            height: 240px;
+          }
+
+          .book-title {
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+    

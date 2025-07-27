@@ -1,0 +1,471 @@
+/* Base styles */
+.main-login {
+  position: relative;
+  top: 15px;
+  margin: 0px auto;
+  background-color: #e3f2fd;
+  height: 500px;
+  width: min(900px, 95vw);
+  max-width: 900px;
+  display: flex;
+  border-radius: 15px;
+  box-sizing: border-box;
+  overflow: hidden; /* This will clip any overflowing content */
+}
+
+.side-bar {
+  width: 65%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #283593;
+  position: absolute;
+  left: -32.5%; /* Position it so exactly half is visible */
+  top: 0;
+  clip-path: inset(0 0 0 50%);
+  transition: all 0.3s ease;
+}
+
+.admin-box pre {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.login-box {
+  margin-top: 13px;
+  width: 60%;
+  height: 400px;
+  position: absolute;
+  right: 67px;
+  bottom: 60px;
+  font-family: montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.student-logo {
+  height: 100px;
+  width: 100px;
+  background-color: burlywood;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.login-box p,
+.login-box-admin p {
+  font-family: montserrat, sans-serif;
+  font-size: clamp(24px, 4vw, 40px);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-box form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-detail {
+  height: 35px;
+  border: none;
+  border-bottom: black 2px solid;
+  width: 90%;
+  max-width: 300px;
+  font-size: clamp(14px, 2vw, 16px);
+  background-color: #e3f2fd;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.input-detail:focus {
+  outline: none;
+  border-bottom-color: #1565c0;
+}
+
+.login-bt {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 240px;
+  height: 40px;
+  background-color: #1565c0;
+  color: white;
+  border-radius: 20px;
+  font-size: clamp(16px, 2vw, 18px);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-bt:hover {
+  background-color: #0d47a1;
+}
+
+.hr-line {
+  width: 95%;
+  text-align: left;
+  margin-left: 0;
+  height: 3px;
+  background-color: #004d40;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.side-bar-admin {
+  width: 65%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #283593;
+  position: absolute;
+  right: -32.5%; /* Position it so exactly half is visible */
+  top: 0;
+  clip-path: inset(0 50% 0 0);
+  transition: all 0.3s ease;
+}
+
+.student-box {
+  position: absolute;
+  left: 70px;
+  top: 141px;
+}
+
+.logo-box {
+  height: clamp(180px, 25vw, 230px);
+  width: clamp(150px, 20vw, 186px);
+  background-color: #bbdefb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-box:hover {
+  transform: scale(1.05);
+}
+
+.admin-box {
+  position: absolute;
+  right: 86px;
+  top: 141px;
+}
+
+.student-box pre {
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.login-box-admin {
+  margin-top: 13px;
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  left: 67px;
+  bottom: 60px;
+  font-family: montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.login-box-admin form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-logo {
+  height: 100px;
+  width: 100px;
+  background-color: burlywood;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.register-link {
+  font-size: clamp(12px, 2vw, 14px);
+  color: #ff0079;
+  text-align: center;
+}
+
+.register-link a {
+  color: blue;
+  text-decoration: none;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.register-link a:visited {
+  color: purple;
+}
+
+.showPage {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.MobileViewContainer {
+  display: none;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.login {
+  left: 0;
+  z-index: 1;
+}
+
+.signup {
+  right: 0;
+  z-index: 0;
+}
+
+.active {
+  z-index: 2;
+  transform: scale(1.08);
+}
+
+.mobile-logo-box {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #bbdefb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-logo-box svg {
+  margin-bottom: 2px;
+}
+
+.mobile-logo-box pre {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+.circle:focus,
+.mobile-logo-box:focus {
+  outline: none;
+}
+
+.circle:active,
+.mobile-logo-box:active {
+  background-color: transparent;
+}
+
+/* Tablet styles */
+@media screen and (min-width: 551px) and (max-width: 900px) {
+  .main-login {
+    width: min(768px, 95vw);
+    height: 480px;
+  }
+  
+  .side-bar {
+    left: -32.5%;
+  }
+
+  .side-bar-admin {
+    right: -32.5%;
+  }
+
+  .admin-box {
+    right: clamp(30px, 6vw, 50px);
+  }
+
+  .student-box {
+    left: clamp(20px, 4vw, 35px);
+  }
+
+  .login-box {
+    right: clamp(30px, 6vw, 67px);
+    width: 55%;
+  }
+
+  .login-box-admin {
+    left: clamp(30px, 6vw, 67px);
+    width: 55%;
+  }
+
+  .logo-box {
+    height: clamp(160px, 22vw, 200px);
+    width: clamp(130px, 18vw, 160px);
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 550px) {
+  .side-bar,
+  .side-bar-admin {
+    display: none;
+  }
+
+  .main-login {
+    top: 15px;
+    width: min(320px, 95vw);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .student-logo,
+  .admin-logo {
+    display: none;
+  }
+
+  .login-box p,
+  .login-box-admin p {
+    display: none;
+  }
+
+  .MobileViewContainer {
+    display: block;
+    margin-top: 10px;
+    width: min(200px, 90vw);
+  }
+
+  .login-box {
+    top: 155px;
+    width: 90%;
+    left: 5%;
+    right: auto;
+    padding: 0 5px;
+  }
+
+  .login-box-admin {
+    top: 155px;
+    width: 90%;
+    left: 5%;
+    right: auto;
+    padding: 0 5px;
+  }
+
+  .input-detail {
+    width: 95%;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .login-bt {
+    width: 85%;
+    height: 45px;
+  }
+
+  .circle {
+    width: min(90px, 25vw);
+    height: min(90px, 25vw);
+    font-size: 14px;
+  }
+
+  .MobileViewContainer {
+    width: min(180px, 80vw);
+    height: min(90px, 25vw);
+  }
+
+  .admin-box,
+  .student-box {
+    position: static;
+  }
+}
+
+/* Extra small mobile devices */
+@media screen and (max-width: 320px) {
+  .main-login {
+    width: 95vw;
+    height: 420px;
+    top: 10px;
+  }
+
+  .login-box,
+  .login-box-admin {
+    top: 140px;
+    height: 350px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  .MobileViewContainer {
+    width: 160px;
+    height: 80px;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  .main-login {
+    width: 1000px;
+    height: 550px;
+  }
+
+  .side-bar {
+    left: -32.5%;
+  }
+
+  .side-bar-admin {
+    right: -32.5%;
+  }
+
+  .login-box {
+    right: 80px;
+    bottom: 80px;
+  }
+
+  .login-box-admin {
+    left: 80px;
+    bottom: 80px;
+  }
+
+  .admin-box {
+    right: 80px;
+  }
+
+  .student-box {
+    left: 90px;
+  }
+}

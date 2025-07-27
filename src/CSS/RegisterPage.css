@@ -1,0 +1,228 @@
+
+.register-container {
+  display: flex;
+  max-width: 900px;
+  margin: 35px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e8f5fd;
+}
+
+.register-left {
+  background-color: #232f9c;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 40px 0;
+}
+
+.admin-icon {
+  background-color: #b6e0fe;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-icon i {
+  font-size: 50px;
+}
+
+.admin-icon p {
+  margin-top: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.register-right {
+  width: 65%;
+  padding: 40px;
+  text-align: center;
+}
+
+.register-right .logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.register-right h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.register-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-right input {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: transparent;
+}
+
+.register-right button {
+  padding: 12px;
+  background-color: #0b60b0;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-right hr {
+  margin: 20px 0;
+  border: 0.5px solid #007979;
+}
+
+.login-link {
+  font-size: 14px;
+  color: #ff0079;
+}
+
+.login-link a {
+  color: blue;
+  text-decoration: none;
+}
+
+.login-link a:visited {
+  color: none;
+}
+
+.svg-logo {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 550px) {
+  .register-right{
+    padding: 15px;
+  }
+}
+
+   @media screen and (max-width: 768px) {
+            .register-container {
+              flex-direction: column;
+              max-width: 500px;
+              margin: 20px auto;
+            }
+
+            .register-left {
+              width: 100%;
+              border-radius: 20px 20px 0 0;
+              padding: 30px 0;
+            }
+
+            .admin-icon {
+              width: 120px;
+              height: 120px;
+            }
+
+            .admin-icon i {
+              font-size: 40px;
+            }
+
+            .admin-icon p {
+              font-size: 12px;
+            }
+
+            .register-right {
+              width: 100%;
+              padding: 30px;
+            }
+
+            .register-right h2 {
+              font-size: 28px;
+              margin-bottom: 20px;
+            }
+          }
+
+          @media screen and (max-width: 550px) {
+            .register-container {
+              margin: 10px;
+              border-radius: 15px;
+            }
+
+            .register-left {
+              padding: 25px 0;
+              border-radius: 15px 15px 0 0;
+            }
+
+            .admin-icon {
+              width: 100px;
+              height: 100px;
+            }
+
+            .admin-icon i {
+              font-size: 35px;
+            }
+
+            .admin-icon p {
+              font-size: 11px;
+              margin-top: 8px;
+            }
+
+            .register-right {
+              padding: 20px 15px;
+            }
+
+            .register-right h2 {
+              font-size: 24px;
+              margin-bottom: 20px;
+            }
+
+            .register-right input {
+              padding: 10px;
+              font-size: 14px;
+            }
+
+            .register-right button {
+              padding: 10px;
+              font-size: 16px;
+            }
+
+            .svg-logo svg {
+              width: 70px !important;
+              height: 70px !important;
+            }
+          }
+
+          @media screen and (max-width: 400px) {
+            .register-container {
+              margin: 5px;
+            }
+
+            .register-right {
+              padding: 15px 10px;
+            }
+
+            .register-right h2 {
+              font-size: 20px;
+            }
+
+            .register-right input {
+              font-size: 13px;
+            }
+
+            .register-right button {
+              font-size: 14px;
+            }
+
+            .svg-logo svg {
+              width: 60px !important;
+              height: 60px !important;
+            }
+          }
