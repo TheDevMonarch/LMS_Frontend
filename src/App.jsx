@@ -26,7 +26,7 @@ import RoleRoute from "./Pages/RoleRoute.jsx";
 import BookAllottment from "./Pages/Admin/BookAllottment.jsx";
 import AllotBook from "./Pages/Admin/AllotBook.jsx";
 import ChangePenaltyAmount from "./Pages/Admin/ChangePenaltyAmount.jsx";
-import AddNewStudent from "./Pages/Admin/addNewStudent.jsx";
+import AddNewStudent from "./Pages/Admin/AddNewStudent.jsx";
 
 
 const App = () => {
