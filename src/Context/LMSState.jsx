@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import LMSContext from "./LMSContext.jsx";
 import axios from "axios";
+import config from "../config.js";
+
 const LMSState = (props) => {
   const [menubt, setMenubt] = useState();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -16,7 +18,8 @@ const LMSState = (props) => {
   const [role, setRole] = useState("");
 
   const [book, setBook] = useState();
-  const apiUrl= 'https://lms-api-kold.onrender.com';
+  console.log(config.apiBaseUrl)
+  const apiUrl= `${config.apiBaseUrl}`;
 
   const [allExtensionRequests, setAllExtensionRequests] = useState();
 

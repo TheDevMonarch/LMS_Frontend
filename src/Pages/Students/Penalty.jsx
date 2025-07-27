@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../../CSS/Students/Penalty.css";
+import config from "../../config.js";
 
 import LMSContext from "../../Context/LMSContext.jsx";
 import axios from "axios";
@@ -51,7 +52,7 @@ const Penalty = () => {
       const { orderId, amount, bookIds } = orderResponse.data;
 
       const options = {
-        key: "rzp_test_xD0hdRAzk5jBXJ", 
+        key: `${config.razorpayKey}`,
         amount: amount*100, 
         currency: "INR",
         name: "Library Management System", 
