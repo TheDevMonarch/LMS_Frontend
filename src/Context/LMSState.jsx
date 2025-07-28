@@ -18,7 +18,7 @@ const LMSState = (props) => {
   const [role, setRole] = useState("");
 
   const [book, setBook] = useState();
-  console.log(config.apiBaseUrl)
+  // console.log(config.apiBaseUrl)
   const apiUrl= `${config.apiBaseUrl}`;
 
   const [allExtensionRequests, setAllExtensionRequests] = useState();
