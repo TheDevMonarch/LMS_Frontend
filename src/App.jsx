@@ -28,6 +28,7 @@ import AllotBook from "./Pages/Admin/AllotBook.jsx";
 import ChangePenaltyAmount from "./Pages/Admin/ChangePenaltyAmount.jsx";
 import AddNewStudent from "./Pages/Admin/AddNewStudent.jsx";
 
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
 
@@ -42,6 +43,7 @@ const App = () => {
 
   return (
     <>
+
       <Routes>
          <Route path="/" element={<Navigate to="/loginPage" replace />} />
         <Route path="/RegisterPage" element={<Register />} />
@@ -93,6 +95,8 @@ const App = () => {
           </Route>
         </Route>
       </Routes>
+
+       <SpeedInsights />
     </>
   );
 };
