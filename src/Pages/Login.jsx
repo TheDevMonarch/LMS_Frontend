@@ -293,11 +293,6 @@ const Login = () => {
             </form>
 
             <hr className="hr-line" />
-
-            <pre className="register-link">
-              {" "}
-              Create New Account <Link to={"/RegisterPage"}>Here</Link>
-            </pre>
           </div>
         </div>
       </div>

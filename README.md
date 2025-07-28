@@ -2,6 +2,22 @@
 
 A full-stack Library Management System built using the **MERN stack** (MongoDB, Express.js, React, Node.js) with **Role-Based Access Control (RBAC)**, JWT authentication via `httpOnly` cookies, Cloudinary image uploads, and support for student services like penalty payment and book extension requests.
 
+---
+
+## Very Important
+I designed the website for specific college students.
+You can only register to this LMS website if your data present in college database.
+
+So if you want to test and see your dashboard
+1) click on admin, Login to admin using,
+2) Enter UserName: AdminAR14, Password: 2305
+3) Go to add new student and add your detail that is name and URN. 
+4) GO to register Page and then register and login.
+
+The process is long but I design for only college student so no other people access it. 
+
+
+---
 
 You can check the full running website on
 **https://lms-frontend-jade-three.vercel.app/**
