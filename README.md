@@ -2,6 +2,10 @@
 
 A full-stack Library Management System built using the **MERN stack** (MongoDB, Express.js, React, Node.js) with **Role-Based Access Control (RBAC)**, JWT authentication via `httpOnly` cookies, Cloudinary image uploads, and support for student services like penalty payment and book extension requests.
 
+
+You can check the full running website on
+**https://lms-frontend-jade-three.vercel.app/**
+
 ---
 
 ## 🚀 Features
